@@ -1,3 +1,6 @@
+.all-holder {
+  background-color: #e9f6fc;
+}
 .upper-hold,
 .counts {
   display: flex;
@@ -20,9 +23,52 @@
   border-radius: 30px;
   color: #0c68e0;
   font-weight: bold;
+  background-color: #fff;
 }
 
 .export {
   padding-right: 2rem;
   font-weight: bold;
+}
+
+/* ///////////////icons */
+
+.export {
+  display: flex;
+  align-items: center;
+}
+
+.export img {
+  height: 35px;
+}
+
+.sr-box {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sr-box input {
+  height: 26px;
+  width: 15rem;
+}
+
+.filter-ico {
+  height: 30px;
+}
+
+.sr-bg {
+  background-color: #009cfd;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -10px;
+}
+
+.sr-ico {
+  height: 21px;
 }

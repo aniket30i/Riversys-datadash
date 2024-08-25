@@ -1,4 +1,6 @@
 .table-container {
   padding-top: 2rem;
   padding-inline: 2rem;
+  background-color: #e9f6fc;
+  min-height: 700px;
 }

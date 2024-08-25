@@ -1,23 +1,25 @@
 .multi-filter {
-  height: 4rem;
-  border-bottom: 1px solid #545455;
+  height: 6rem;
+  /* border-bottom: 1px solid #545455; */
   padding-top: 2rem;
   padding-left: 2rem;
+  background-color: #e9f6fc;
 }
 
 .total {
   display: flex;
   gap: 5rem;
+  align-items: center;
 }
 
 .filter-holder {
   display: flex;
-  justify-content: space-between;
-  gap: 5rem;
+  gap: 2rem;
   border: 1px solid #000;
   padding: 1rem;
   border-radius: 25px;
   align-items: center;
+  background-color: #fff;
 }
 
 .custom-date-picker {
@@ -28,8 +30,14 @@
 }
 
 .plc-flt {
-  border: solid 1px #18bebe;
-  color: #18bebe;
+  border: solid 1px #0081d1;
+  color: #0081d1;
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+  height: 2rem;
+  width: 6rem;
+  gap: 1rem;
 }
 
 .st-dt,
@@ -40,4 +48,51 @@
 .st-dt input,
 .en-dt input {
   height: 25px;
+  color: #0081d1;
+}
+
+.plc-flt-lg {
+  border: solid 1px #0081d1;
+  color: #0081d1;
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+  height: 2rem;
+  width: 15rem;
+  gap: 6.5rem;
+}
+
+.plc-flt-xl {
+  border: solid 1px #0081d1;
+  color: #0081d1;
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+  height: 2rem;
+  width: 15rem;
+  gap: 8rem;
+}
+
+/* ////////////////// icons */
+/* #029DFF */
+
+.po-comp {
+  background-color: #666666;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+  height: 2rem;
+  width: 8rem;
+}
+
+.arr-wico {
+  height: 30px;
+}
+
+.arr-bico {
+  height: 15px;
 }

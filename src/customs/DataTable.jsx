@@ -230,7 +230,15 @@ export default function DataTable() {
   const filteredRows = applyFilters(rows, filters);
 
   return (
-    <div style={{ height: 400, width: "100%" }}>
+    <div
+      style={{
+        height: 600,
+        width: "100%",
+        backgroundColor: "#fff",
+        padding: "10px",
+        borderRadius: "15px",
+      }}
+    >
       <div style={{ marginBottom: "10px", display: "flex" }}>
         {!isQuery && (
           <>
@@ -294,6 +302,11 @@ export default function DataTable() {
         }}
         pageSizeOptions={[5, 10]}
         checkboxSelection
+        sx={{
+          "& .MuiDataGrid-root": {
+            border: "none", // Remove the outline/border around the DataGrid
+          },
+        }}
       />
     </div>
   );
