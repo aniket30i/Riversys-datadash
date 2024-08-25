@@ -81,6 +81,26 @@ const initialColumns = [
     field: "Status",
     headerName: "Status",
     width: 100,
+    renderCell: (params) => {
+      let color;
+      switch (params.value) {
+        case "Accepted":
+          color = "#367403";
+          break;
+        case "Rejected":
+          color = "#da0c16";
+          break;
+        case "Review Req":
+          color = "#c9960b";
+          break;
+        case "Delayed":
+          color = "#3b1e1f";
+          break;
+        default:
+          color = "#0c68e0";
+      }
+      return <span style={{ color }}>{params.value}</span>;
+    },
   },
 ];
 
@@ -246,7 +266,7 @@ export default function DataTable() {
               variant="outlined"
               sx={{ minWidth: 120, marginRight: "10px" }}
             >
-              <InputLabel id="age-filter-label">Status</InputLabel>
+              <InputLabel id="status-filter-label">Status</InputLabel>
               <Select
                 labelId="status-filter-label"
                 name="statusOptions"
