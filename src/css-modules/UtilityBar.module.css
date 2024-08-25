@@ -19,7 +19,8 @@
 .counts p {
   border: 1px solid #67696b;
   padding: 2px;
-  padding-inline: 10px;
+  padding-top: 5px;
+  padding-inline: 12px;
   border-radius: 30px;
   color: #0c68e0;
   font-weight: bold;

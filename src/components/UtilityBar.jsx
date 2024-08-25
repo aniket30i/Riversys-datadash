@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useRef } from "react";
 import styles from "../css-modules/UtilityBar.module.css";
 import { ContextProvider } from "../context/ContextProvider.jsx";
 import FilterUtil from "./FilterUtil.jsx";
@@ -15,17 +15,34 @@ function UtilityBar() {
   };
 
   const [headings, setHeadings] = useState({
-    ResponseAwaited: 0,
+    Open: 0,
     Accepted: 0,
     Rejected: 0,
-    ReviewRequested: 0,
-    GrnDone: 0,
+    "Review Req": 0,
+    "GRN posted": 0,
     Delayed: 0,
+    Dispatched: 0,
   });
 
+  const hasRun = useRef(false); // prevent double render
+
   useEffect(() => {
-    // const counts
-  });
+    if (hasRun.current) return; // prevent double render
+    const processData = () => {
+      data.map((item) => {
+        if (item.Status in headings) {
+          setHeadings((prevHeadings) => ({
+            ...prevHeadings,
+            [item.Status]: prevHeadings[item.Status] + 1,
+          }));
+        }
+      });
+    };
+    processData();
+    hasRun.current = true; // prevention
+  }, []);
+
+  console.log(headings);
 
   /// Exporting data as excel
   // 1 Convert data to a worksheet
@@ -65,12 +82,13 @@ function UtilityBar() {
     <div id="container" className={styles["all-holder"]}>
       <div id="upper" className={styles["upper-hold"]}>
         <div id="counts" className={styles["counts"]}>
-          <p>Response Awaited #</p>
-          <p>Accepted #</p>
-          <p>Rejected #</p>
-          <p>Review Requested #</p>
-          <p>GRN Done #</p>
-          <p>Delayed #</p>
+          <p>Response Awaited {headings.Open}</p>
+          <p>Accepted {headings.Accepted}</p>
+          <p>Rejected {headings.Rejected}</p>
+          <p>Review Requested {headings["Review Req"]}</p>
+          <p>GRN Done {headings["GRN posted"]}</p>
+          <p>Delayed {headings.Delayed}</p>
+          <p>Dispatched {headings.Dispatched}</p>
         </div>
         <div id="search" className={styles["sr-box"]}>
           <img src={flt} alt="ico" className={styles["filter-ico"]} />
