@@ -1,0 +1,57 @@
+.bg-nav {
+  background-color: #575454;
+  height: 5rem;
+  width: 100%;
+  color: #fff;
+  cursor: default;
+}
+
+.bg-nav h1 {
+  color: #c2c9c9;
+}
+
+.nav-items,
+.nav-icons,
+.user-ico {
+  display: flex;
+}
+
+.nav-items {
+  padding-top: 1.25rem;
+}
+
+.nav-items {
+  justify-content: space-between;
+}
+
+.branding {
+  padding-left: 2rem;
+}
+
+.nav-icons {
+  gap: 2.5rem;
+  padding-left: 7rem;
+}
+
+.user-ico {
+  padding-right: 2rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* ///////////----icons---/////////// */
+
+.purchase,
+.dashboard,
+.reports,
+.rfq,
+.invoice {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.round-ico {
+  filter: invert(1);
+  height: 32px;
+}

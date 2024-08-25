@@ -1,0 +1,43 @@
+.multi-filter {
+  height: 4rem;
+  border-bottom: 1px solid #545455;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.total {
+  display: flex;
+  gap: 5rem;
+}
+
+.filter-holder {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  border: 1px solid #000;
+  padding: 1rem;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.custom-date-picker {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+}
+
+.plc-flt {
+  border: solid 1px #18bebe;
+  color: #18bebe;
+}
+
+.st-dt,
+.en-dt {
+  /* border: 1px solid #777676; */
+}
+
+.st-dt input,
+.en-dt input {
+  height: 25px;
+}

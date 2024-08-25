@@ -1,0 +1,28 @@
+.upper-hold,
+.counts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upper-hold {
+  padding-top: 1rem;
+}
+
+.counts {
+  gap: 18px;
+  padding-left: 2rem;
+}
+
+.counts p {
+  border: 1px solid #67696b;
+  padding: 2px;
+  padding-inline: 10px;
+  border-radius: 30px;
+  color: #0c68e0;
+  font-weight: bold;
+}
+
+.export {
+  padding-right: 2rem;
+  font-weight: bold;
+}

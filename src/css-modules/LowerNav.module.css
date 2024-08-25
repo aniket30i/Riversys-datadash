@@ -1,0 +1,45 @@
+.bg-lw-nav {
+  background-color: #fff;
+  height: 4rem;
+  border-bottom: 1px solid #c9c9c9;
+}
+.info-items {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.info-items h2 {
+  font-size: 1.75rem;
+}
+.btn-tm {
+  display: flex;
+  padding-right: 2rem;
+  padding-top: 0.25rem;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* //////---icons---///// */
+
+.pur-ord {
+  display: flex;
+  gap: 5px;
+}
+
+.ref-util {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.refresh {
+  height: 26px;
+}
+
+.re-sync {
+  color: #0b56ac;
+  font-weight: bold;
+  font-style: italic;
+}
