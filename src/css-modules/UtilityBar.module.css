@@ -30,6 +30,7 @@
 .export {
   padding-right: 2rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* ///////////////icons */

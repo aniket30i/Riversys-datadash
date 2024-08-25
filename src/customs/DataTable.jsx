@@ -302,11 +302,6 @@ export default function DataTable() {
         }}
         pageSizeOptions={[5, 10]}
         checkboxSelection
-        sx={{
-          "& .MuiDataGrid-root": {
-            border: "none", // Remove the outline/border around the DataGrid
-          },
-        }}
       />
     </div>
   );

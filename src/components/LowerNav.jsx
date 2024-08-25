@@ -57,7 +57,7 @@ function LowerNav() {
           <h2>Purchase Orders</h2>
         </div>
         <div id="dynamic-contents" className={styles["btn-tm"]}>
-          <p>{refreshTime}</p>
+          <p>Last ERP sync : {refreshTime}</p>
           <div className={styles["ref-util"]} onClick={handleRefresh}>
             <img
               src={refresh}
