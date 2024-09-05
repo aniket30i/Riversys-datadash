@@ -19,9 +19,9 @@ This is a demo dashboard application showcasing the use of Material-UI's table c
 - **JavaScript (ES6+)**: Core language used for the project.
 
 
-How It Works
-The purchase orders table lists all orders, and users can sort or filter the data using various controls.
-Custom filters include options for filtering by order status, price, and other criteria. These filters work in tandem and update the table results in real time.
-Search allows users to quickly find specific purchase orders by typing keywords.
-Date filtering lets users narrow down orders within a specific date range.
-The state of the app, including the filter values and search input, is managed globally using the Context API to ensure a consistent experience across components.
+## How It Works
+- The purchase orders table lists all orders, and users can sort or filter the data using various controls.
+- Custom filters include options for filtering by order status, price, and other criteria. These filters work in tandem and update the table results in real time.
+- Search allows users to quickly find specific purchase orders by typing keywords.
+- Date filtering lets users narrow down orders within a specific date range.
+- The state of the app, including the filter values and search input, is managed globally using the Context API to ensure a consistent experience across components.
